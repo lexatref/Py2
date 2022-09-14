@@ -34,7 +34,6 @@ def main():
         'Crock Pot Pasta Never boil pasta again',
         'Pasta Pomodoro Fresh ingredients Parmesan to taste'
     ]
-    print(type(corpus))
 
     vectorizer = CountVectorizer()
     count_matrix = vectorizer.fit_transform(corpus)
