@@ -18,10 +18,8 @@ class CountVectorizer:
             result_string = [0] * len(self.features)
             words = text_string.lower().split(' ')
             for word in words:
-                for i, feature in enumerate(self.features):
-                    if word == feature:
-                        result_string[i] += 1
-                        break
+                i = self.features.index(word)
+                result_string[i] += 1
             result.append(result_string)
         return result
 
