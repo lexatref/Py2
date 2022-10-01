@@ -26,7 +26,7 @@ class CountVectorizerDict:
         return result
 
     def get_feature_names(self) -> list[str]:
-        return list(self.features.keys())
+        return list(self.features)
 
 
 def main():
